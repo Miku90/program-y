@@ -1,8 +1,16 @@
 import unittest
+import os
 from xml.etree.ElementTree import ParseError
 
 from programy.parser.aiml_parser import AIMLParser
-from programy.parser.pattern.nodes import *
+from programy.parser.exceptions import ParserException
+from programy.parser.pattern.nodes.root import PatternRootNode
+from programy.parser.pattern.nodes.topic import PatternTopicNode
+from programy.parser.pattern.nodes.that import PatternThatNode
+from programy.parser.pattern.nodes.word import PatternWordNode
+from programy.parser.pattern.nodes.oneormore import PatternOneOrMoreWildCardNode
+from programy.parser.pattern.nodes.template import PatternTemplateNode
+
 from programy.dialog import Sentence
 
 class AIMLParserTests(unittest.TestCase):
@@ -10,6 +18,14 @@ class AIMLParserTests(unittest.TestCase):
     def setUp(self):
         self.parser = AIMLParser(supress_warnings=True, stop_on_invalid=True)
         self.assertIsNotNone(self.parser)
+
+    def test_parse_from_file_valid(self):
+        filename = os.path.dirname(__file__)+ '/valid.aiml'
+        self.parser.parse_from_file(filename)
+
+    def test_parse_from_file_invalid(self):
+        filename = os.path.dirname(__file__)+ '/invalid.aiml'
+        self.parser.parse_from_file(filename)
 
     def test_crud(self):
         with self.assertRaises(ParseError) as raised:

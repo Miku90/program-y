@@ -7,7 +7,7 @@ from programy.config.client.client import ClientConfiguration
 class NowAskMeTrainTestClient(TestClient):
 
     def __init__(self):
-        TestClient.__init__(self, debug=True)
+        TestClient.__init__(self)
 
     def load_configuration(self, arguments):
         self.configuration = ClientConfiguration()
@@ -23,4 +23,4 @@ class TrainAIMLTests(unittest.TestCase):
         response = TrainAIMLTests.test_client.bot.ask_question("test", "daddy is great")
         self.assertIsNotNone(response)
         #TODO Sort out space in questions
-        self.assertEqual("Now you can ask me: \" Who IS GREAT \"? and \" What does my DADDY BE \"?", response)
+        self.assertEqual('Now you can ask me: "Who IS GREAT"? and "What does my DADDY BE"?', response)

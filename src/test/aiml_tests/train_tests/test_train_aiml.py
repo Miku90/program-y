@@ -7,7 +7,7 @@ from programy.config.client.client import ClientConfiguration
 class TrainTestClient(TestClient):
 
     def __init__(self):
-        TestClient.__init__(self, debug=True)
+        TestClient.__init__(self)
 
     def load_configuration(self, arguments):
         self.configuration = ClientConfiguration()
@@ -54,7 +54,7 @@ class TrainAIMLTests(unittest.TestCase):
         self.assertIsNotNone(response)
 
         #TODO Fix the spacing in quotes
-        self.assertEqual("Now you can ask me: \" Who LIKES TO SMOKE CIGARS \"? and \" What does my MOMMY LIKE \"?", response)
+        self.assertEqual('Now you can ask me: "Who LIKES TO SMOKE CIGARS"? and "What does my MOMMY LIKE"?', response)
 
         response = TrainAIMLTests.test_client.bot.ask_question("test", "who likes to smoke cigars")
         self.assertIsNotNone(response)

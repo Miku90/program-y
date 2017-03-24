@@ -47,6 +47,10 @@ def is_apikey_valid(apikey):
     else:
         return False
 
+# Example Usage
+#
+# curl 'http://localhost:5000/api/v1.0/ask?question=hello+world&sessionid=1234567890'
+#
 @app.route('/api/v1.0/ask', methods=['GET'])
 def ask():
 
