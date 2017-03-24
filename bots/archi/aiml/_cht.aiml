@@ -87,6 +87,19 @@
         <li>CHT: Anyway, I would have stole the cht insult response but I already have one better bottu line.</li>
         <li>Cjcomplex: Aww, I wanted to loot your pp ;_;.</li>
         <li>Windu: :sgsmile: im also very busy irl</li>
+        <li>ミユ: Just the C++ compilers are almost 6GB</li>
+      </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>PRAISE *</pattern>
+    <template>
+      <random>
+        <li><star /> is so gud.</li>
+        <li><star /> is so good looking, even time stops for <star />.</li>
+        <li><star /> is so smart, the gods wanted to hire <star /> as their personal assistant.</li>
+        <li><star /> is so popular that even aliens showed up to see <star />.</li>
       </random>
     </template>
   </category>
