@@ -2,6 +2,11 @@
 <aiml>
 	<category>
 		<pattern>FISTO</pattern>
-		<template>:bigBetty: Assume The Position :bigBetty:</template>
+		<template>
+			<random>
+				<li>:bigBetty: Assume The Position :bigBetty:</li>
+				<li>Assume The Position :bigBetty:</li>
+			</random>
+		</template>
 	</category>
 </aiml>
