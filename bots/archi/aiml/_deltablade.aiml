@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+	<category>
+		<pattern>FISTO</pattern>
+		<template>:bigBetty: Assume The Position :bigBetty:</template>
+	</category>
+</aiml>
