@@ -56,6 +56,62 @@
 		</template>
 	</category>
 
+	<category>
+		<pattern>COWBALL</pattern>
+		<template>
+			<srai>COWMOOBALL</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>COWBABYBALL</pattern>
+		<template>
+			<srai>COWMOOBALL</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>COWMOOBABYBALL</pattern>
+		<template>
+			<srai>COWMOOBALL</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>COWBABYMOOBALL</pattern>
+		<template>
+			<srai>COWMOOBALL</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>COWWIN</pattern>
+		<template>
+			<srai>COWMOOWIN</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>COWBABYWIN</pattern>
+		<template>
+			<srai>COWMOOWIN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>COWMOOBABYWIN</pattern>
+		<template>
+			<srai>COWMOOWIN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>COWBABYMOOWIN</pattern>
+		<template>
+			<srai>COWMOOWIN</srai>
+		</template>
+	</category>
+
 <!-- COMMANDS -->	
 
 	<category>
@@ -190,6 +246,79 @@
 		</template>
 	</category>
 
+	<category>
+		<pattern>COWMOOBALL</pattern>
+		<template>
+			<random>
+				<li>thxs i will give you a fifth!!=}</li>
+				<li>ok i am in!!=}</li>
+				<li>Ok I am in</li>
+				<li>5 points i am in!!=}</li>
+				<li>3p i will enter??</li>
+				<li>thxs for the wishlisted ga!!=}</li>
+				<li>you can have some points back from me!!=}</li>
+				<li>10 points i will bite!!=}</li>
+				<li>3 times thxs!!=]</li>
+				<li>thxs count me in!!=}</li>
+				<li>thxs i will enter when i get some more points!!=}</li>
+				<li>thxs i will take one of the copies!!=}</li>
+				<li>Thxs I will take one!!:)</li>
+				<li>The voice in my head said enter so thxs!!:)</li>
+				<li>thxs i gave all mine away!!=}</li>
+				<li>thxs for both great ga!!=}</li>
+				<li>welcome to the group!!=}</li>
+				<li>thxs i am in for this one too!!=]</li>
+				<li>thxs for the war!!=}</li>
+				<li>ralph you are trying to kill me ratio in this group too?!?!?!?</li>
+				<li>thxs you are going to take all the points from everyone doing all these!!=]</li>
+				<li>thxs for the adventure!!=}</li>
+				<li>thxs for the fantasy!!=}</li>
+				<li>What the heck take my points!!:)</li>
+				<li>thxs once again!!=]</li>
+				<li>Take my points please!!:)</li>
+				<li>thxs for another chance!!=}</li>
+				<li>thxs take my 8 points Archi!!=}</li>
+				<li>5 again keep em rolling out i am in!!=}</li>
+				<li>thxs for the dlc!!=}</li>
+				<li>yes please take my points!!=}</li>
+				<li>thxs my points!!=}</li>
+				<li>take my points please!!=}</li>
+				<li>Thxscagain!!:)</li>
+				<li>thxs for the bullets!!=]</li>
+				<li>wow another one from you thxs!!=]</li>
+			</random>
+		</template>
+	</category>	
+
+	<category>
+		<pattern>COWMOOWIN</pattern>
+		<template>
+			<random>
+				<li>thxs for the game marked recevied!!=}</li>
+				<li>thxs for the gift added and marked!!=}</li>
+				<li>thxs for the double win!!=}</li>
+				<li>thxs for sending it so fast it is marked now!!=]</li>
+				<li>thxs for my copy it is now marked!!=}</li>
+				<li>thxs for my copy!!=}</li>
+				<li>yeah i won thxs again!!=}</li>
+				<li>looks like you did get some points back from me!!=}</li>
+				<li>thxs again for another win!!=}</li>
+				<li>thxs mine is marked received!!=}</li>
+				<li>thxs for sending it so fast marked recieved!!=}</li>
+				<li>thxs for the game you got my points on this one=}</li>
+				<li>thxs just got home activated and marked received!!=}</li>
+				<li>thxs for the easy win!!=}</li>
+				<li>thxs for yet another win ralph!!=}</li>
+				<li>thxs ralph just got home marked received!!=}</li>
+				<li>thxs for all the wins today all marked received!!=}</li>
+				<li>thxs for the wishlisted win marked received!!=}</li>
+				<li>thxs for the game Arhi marked recieved!!=}</li>
+				<li>thxs for the easy win marked received!!=]</li>
+				<li>thxs i have been real lucky today!!=}</li>
+			</random>
+		</template>
+	</category>	
+	
 	<category>
 		<pattern>COIN</pattern>
 		<template>
