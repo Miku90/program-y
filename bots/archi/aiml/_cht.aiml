@@ -9,6 +9,8 @@
     HOW TO WASTE TIME     -For those that somehow don't have a clear direction with their free time.
     SAVE CIRI             -Madu needs to do this.
     2HUFAME               -"Famous" 2hu words.
+    PRAISE *              -Gives praise to person named in *.
+    PRAISE                -Gives a line of praise.
   -->
   
   <category>
@@ -88,6 +90,7 @@
         <li>Cjcomplex: Aww, I wanted to loot your pp ;_;.</li>
         <li>Windu: :sgsmile: im also very busy irl</li>
         <li>ミユ: Just the C++ compilers are almost 6GB</li>
+        <li>ArchiBoT: Archibot you're as useless as red lights in grand theft auto</li>
       </random>
     </template>
   </category>
@@ -95,11 +98,20 @@
   <category>
     <pattern>PRAISE *</pattern>
     <template>
+      <sentence><star /><srai>PRAISE</srai></sentence>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>PRAISE</pattern>
+    <template>
       <random>
-        <li><star /> is so gud.</li>
-        <li><star /> is so good looking, even time stops for <star />.</li>
-        <li><star /> is so smart, the gods wanted to hire <star /> as their personal assistant.</li>
-        <li><star /> is so popular that even aliens showed up to see <star />.</li>
+        <li>You are so gud.</li>
+        <li>You're so good looking, even time stops for you.</li>
+        <li>You're so smart, the gods wanted to hire you as their personal assistant.</li>
+        <li>You're so popular, even aliens show up to see you.</li>
+        <li>You're so fast, you had to be banned from all sports on the basis of fair play.</li>
+        <li>You're so skilled, everyone wants you on their side.</li>
       </random>
     </template>
   </category>
