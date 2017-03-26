@@ -4,7 +4,17 @@
 		<pattern>FISTO</pattern>
 		<template>
 			<random>
-				<li>:bigBetty: Assume The Position :bigBetty:</li>
+				<li>Greetings. Fisto is programmed to please. :bigBetty:</li>
+				<li>Greetings. Fisto is programmed to please. :bigBetty:</li>
+				<li>Numbness will subside in several minutes. :bigBetty:</li>
+				<li>I am programmed for your pleasure. :bigBetty:</li>
+				<li>I am programmed for your pleasure. :bigBetty:</li>
+				<li>Please assume the position :bigBetty:</li>
+				<li>Please assume the position :bigBetty:</li>
+				<li>Assume The Position :bigBetty:</li>
+				<li>Assume The Position :bigBetty:</li>
+				<li>Assume The Position :bigBetty:</li>
+				<li>Assume The Position :bigBetty:</li>
 				<li>Assume The Position :bigBetty:</li>
 			</random>
 		</template>
