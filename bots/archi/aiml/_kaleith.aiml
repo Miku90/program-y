@@ -46,7 +46,12 @@
 
 	<category>
 		<pattern>9BALL ^</pattern>
-		<template>❾: <srai>8BALL ^</srai></template>
+		<template>❾: <srai>MAGICBALL ^</srai></template>
+	</category>
+
+	<category>
+		<pattern>8BALL ^</pattern>
+		<template>❽: <srai>MAGICBALL ^</srai></template>
 	</category>
 
 	<category>
@@ -355,7 +360,7 @@
 	</category>	
 
 	<category>
-		<pattern>8BALL ^</pattern>
+		<pattern>MAGICBALL ^</pattern>
 		<template>
 			<random>
 				<li>It is certain</li>
