@@ -38,5 +38,19 @@
 		<template>
 			<srai>NUTFACT</srai>
 		</template>
+	</category>		
+
+	<category>
+		<pattern>^ NUT FACTS</pattern>
+		<template>
+			<srai>NUTFACT</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>^ NUT FACT</pattern>
+		<template>
+			<srai>NUTFACT</srai>
+		</template>
 	</category>	
 </aiml>
