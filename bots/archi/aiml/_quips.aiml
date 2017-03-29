@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 	<category>
-		<pattern>FISTO</pattern>
+		<pattern>FISTO</pattern>			<!-- DeltabladeX -->
 		<template>
 			<random>
 				<li>Greetings. Fisto is programmed to please. :bigBetty:</li>
@@ -19,4 +19,24 @@
 			</random>
 		</template>
 	</category>
+	
+	<category>
+		<pattern>NUTFACT</pattern>		<!-- Taigo -->
+		<template>
+			<random>
+				<li>Did you know that Phil is from Frisco?</li>
+				<li>Did you know that ancient Greeks believed hazelnuts could treat coughing and baldness?</li>
+				<li>Did you know that the father of peanuts and peanut butter George Washington Carver had no nuts?</li>
+				<li>Did you know that Nut is the goddess of the sky in the ennead of ancient egyptian religion?</li>
+				<li>Did you know that coconuts are not nuts? They are technically drupes.</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>NUTFACTS</pattern>
+		<template>
+			<srai>NUTFACT</srai>
+		</template>
+	</category>	
 </aiml>
