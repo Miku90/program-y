@@ -30,7 +30,7 @@ class TemplateResponseNode(TemplateIndexedNode):
 
     def resolve(self, bot, clientid):
         try:
-            nth_question = self.index + 1
+            nth_question = self.index
             conversation = bot.get_conversation(clientid)
             question = conversation.nth_question(nth_question)
             responses = question.combine_answers()
