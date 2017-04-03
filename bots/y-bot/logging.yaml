@@ -2,13 +2,13 @@ version: 1
 disable_existing_loggers: False
 
 formatters:
-  simple:
-    format: '%(asctime)s  %(name)-10s %(levelname)-7s %(message)s'
+  rest:
+    format: '%(asctime)-23s %(name)s-%(module)-15s %(funcName)-23s %(levelname)-10s %(message)s'
 
 handlers:
     file:
         class: logging.handlers.RotatingFileHandler
-        formatter: simple
+        formatter: rest
         filename: /tmp/y-bot.log
 
 root:

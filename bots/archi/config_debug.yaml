@@ -1,5 +1,5 @@
 brain:
-    supress_warnings: true
+    supress_warnings: false
 
     allow_system_aiml: true
     allow_learn_aiml: true
@@ -48,9 +48,3 @@ bot:
     default_response: Sorry, I don't have an answer for that!
     exit_response: Bye!
     override_predicates: true
-
-rest:
-    host: 127.0.0.1
-    port: 5000
-    use_api_keys: false
-    debug: false

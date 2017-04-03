@@ -1,0 +1,22 @@
+version: 1
+disable_existing_loggers: True
+
+formatters:
+    colored:
+        (): colorlog.ColoredFormatter
+        format: '%(cyan)s%(name)s-%(module)-15s %(funcName)-23s%(reset)s %(log_color)s%(levelname)-10s%(reset)s %(white)s%(message)s%(reset)s'
+    rest:
+        format: '%(asctime)-23s %(name)s-%(module)-15s %(funcName)-23s %(levelname)-10s %(message)s'
+    simple:
+        format: '%(name)s-%(module)-15s %(funcName)-23s %(levelname)-10s %(message)s'
+
+handlers:
+    console:
+        class: logging.StreamHandler
+        formatter: colored
+        stream  : ext://sys.stdout
+
+root:
+    level: NOTSET
+    handlers:
+        - console

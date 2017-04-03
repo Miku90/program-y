@@ -1,2 +1,17 @@
 version: 1
 disable_existing_loggers: True
+
+formatters:
+    rest:
+        format: '%(asctime)-23s %(name)s-%(module)-15s %(funcName)-23s %(levelname)-10s %(message)s'
+
+handlers:
+    console:
+        class: logging.StreamHandler
+        formatter: rest
+        stream  : ext://sys.stdout
+
+root:
+    level: CRITICAL
+    handlers:
+        - console
