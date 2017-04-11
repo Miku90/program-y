@@ -16,31 +16,61 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 import logging
 
-from programy.parser.template.nodes.base import TemplateNode
+
+from programy.parser.exceptions import ParserException
+from programy.parser.template.nodes.atttrib import TemplateAttribNode
 
 
-class TemplateGenderNode(TemplateNode):
+
+class TemplateLogNode(TemplateAttribNode):
 
     def __init__(self):
-        TemplateNode.__init__(self)
+        TemplateAttribNode.__init__(self)
+        self._level = "debug"
+
+    @property
+    def level(self):
+        return self._level
+
+    @level.setter
+    def level(self, level):
+        self._level = level
 
     def resolve(self, bot, clientid):
         try:
-            string = self.resolve_children_to_string(bot, clientid)
-            resolved = bot.brain.genders.genderise_string(string)
+            resolved = self.resolve_children_to_string(bot, clientid)
             logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
-            return resolved
+            if self._level == "debug":
+                logging.debug(resolved)
+            elif self._level == "warning":
+                logging.warning(resolved)
+            elif self._level == "error":
+                logging.error(resolved)
+            elif self._level == "info":
+                logging.info(resolved)
+            else:
+                logging.info(resolved)
+            return ""
         except Exception as excep:
             logging.exception(excep)
             return ""
 
     def to_string(self):
-        return "GENDER"
+        return "LOG level=%s" % (self._level)
+
+    def set_attrib(self, attrib_name, attrib_value):
+        if attrib_name != 'level':
+            raise ParserException("Invalid attribute name %s for this node", attrib_name)
+        if attrib_value not in ['debug', 'info', 'warning', 'error']:
+            raise ParserException("Invalid attribute value %s for this node %s", attrib_value. attrib_name)
+        self._level = attrib_value
 
     def to_xml(self, bot, clientid):
-        xml = "<gender>"
+        xml = "<log"
+        if self._level is not None:
+            xml += ' level="%s"' % self._level
+        xml += ">"
         for child in self.children:
             xml += child.to_xml(bot, clientid)
-        xml += "</gender>"
+        xml += "</log>"
         return xml
-

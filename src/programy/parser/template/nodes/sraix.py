@@ -17,7 +17,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 import logging
 
 from programy.parser.template.nodes.base import TemplateNode
-
+from programy.utils.services.service import ServiceFactory
 
 
 class TemplateSRAIXNode(TemplateNode):
@@ -35,19 +35,22 @@ class TemplateSRAIXNode(TemplateNode):
         self._service = service
 
     def resolve(self, bot, clientid):
-        resolved = self.resolve_children_to_string(bot, clientid)
-        logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
-        response = ""
         try:
+            resolved = self.resolve_children_to_string(bot, clientid)
+            logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+
             if self._service is not None:
                 bot_service = ServiceFactory.get_service(self._service)
                 response = bot_service.ask_question(bot, clientid, resolved)
                 logging.debug("SRAIX service [%s] return [%s]", self._service, response)
+                return response
             else:
                 logging.error("Sorry SRAIX does not currently have an implementation for [%s]", self._service)
+                return ""
+
         except Exception as excep:
-            logging.error("SRAIX service [%s] failed with error [%s]", self._service, str(excep))
-        return response
+            logging.exception(excep)
+            return ""
 
     def to_string(self):
         return "SRAIX (service=%s)" % (self._service)
