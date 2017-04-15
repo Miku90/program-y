@@ -50,4 +50,17 @@
 			</random>
 		</template>
 	</category>	
+	
+	<category>
+		<pattern>CJBALL</pattern>
+		<template>
+			<random>
+				<li>Cj: I can't believe I just blew 30 bucks. Wait, not that kind of bucks :SYMSface2:</li>
+				<li>Cj: I hate sleeping, 7 hours straight without buying videogames is hell :emofdr:</li>
+				<li>Cj: !nsfw aaaaaaaaaaand it's furry :SYMSface2:</li>
+				<li>Cj: Hm? The bunny costume isn't for Easter, why do you ask?</li>
+				<li>Cj: Please follow me on Youtube! Look, I'm not a furry but... 20 subs are 20 subs :emofrd:</li>
+			</random>
+		</template>
+	</category>
 </aiml>
