@@ -118,6 +118,18 @@
 	</category>
 
 <!-- COMMANDS -->	
+	
+	<category>
+		<pattern># XOR #</pattern>
+		<template>
+			<random>
+				<li><sentence><denormalize><star index="1" /></denormalize></sentence>.</li>
+				<li><sentence><denormalize><star index="2" /></denormalize></sentence>.</li>
+				<li>If I had to choose, I'd pick <sentence><denormalize><star index="1" /></denormalize></sentence>.</li>
+				<li>If I had to choose, I'd pick <sentence><denormalize><star index="2" /></denormalize></sentence>.</li>
+			</random>
+		</template>
+	</category>
 
 	<category>
 		<pattern>FAKUBALL KICK # OR #</pattern>
