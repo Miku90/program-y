@@ -437,5 +437,39 @@
 			</random>
 		</template>
 	</category>
+	
+	<category>
+		<pattern>WHO IS DOSH</pattern>
+		<template>
+			<random>
+				<li>Vert FC Chairman</li>
+				<li>The guy who will never win your gib.</li>
+				<li>Some weeb that unironically enjoys Hyperdimension Neptunia series.</li>
+				<li>Some weeb that unironically enjoys Nekopara series.</li>
+				<li>What you shouldn't throw in unreachable locations.</li>
+				<li>vapor dosh you're a freaking weirdo. You better vaporize like your name says or dosh away you freaking pice of crap.</li>
+				<li>North Pole</li>
+				<li>Dude with a nonindicative nickname.</li>
+				<li>He actually plays games he won, what an moron! :emofdr:</li>
+				<li>Eternal silver.</li>
+				<li>:cocochan3:</li>
+				<li>The asshole who spread the OJ disease in the group.</li>
+				<li>👌:vert:</li>
+				<li>!nsfw miyako_yoshika</li>
+				<li>Fan of Hideo Kojima games made by Hideo Kojima.</li>
+				<li>The first 2hu to give away Shan Gui in the group. :3</li>
+				<li>Guy who still hasn't upgraded his PC.</li>
+				<li>Professional funposter.</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>WHO IS VAPOR DOSH</pattern>
+		<template>
+			<srai>WHO IS DOSH</srai>
+		</template>
+	</category>
+
 
 </aiml>
