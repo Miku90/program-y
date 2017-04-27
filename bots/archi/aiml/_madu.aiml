@@ -10,4 +10,11 @@
 			</random>
 		</template>
 	</category>
+
+	<category>
+		<pattern>WHO IS MADURUDE</pattern>
+		<template>
+			<srai>WHO IS MADU</srai>
+		</template>
+	</category>
 </aiml>

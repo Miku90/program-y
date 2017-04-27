@@ -25,6 +25,13 @@
 			<srai>WHO IS MIKE</srai>
 		</template>
 	</category>
+		
+	<category>
+		<pattern>WHO IS MICHELLE</pattern>
+		<template>
+			<srai>WHO IS MIKE</srai>
+		</template>
+	</category>
 	
 	<category>
 		<pattern>MIKUBALL</pattern>
