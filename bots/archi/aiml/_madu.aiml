@@ -12,6 +12,21 @@
 	</category>
 
 	<category>
+		<pattern>MADU STREAM</pattern>
+		<template>
+			<random>
+				<li>📞 HALLO POLIZEI</li>
+				<li>:petebutton: ILLEGAL STREAM DETECTED :petebutton:</li>
+				<li>Please provide your €10000 license.</li>
+				<li>:coolpolice: Ja, wir sind auf dem Weg</li>
+				<li>🚓</li>
+			</random>
+		</template>
+	</category>
+
+<!-- ALIASES -->
+
+	<category>
 		<pattern>WHO IS MADURUDE</pattern>
 		<template>
 			<srai>WHO IS MADU</srai>

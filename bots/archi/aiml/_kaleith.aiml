@@ -117,7 +117,7 @@
 		</template>
 	</category>
 
-<!-- COMMANDS -->	
+<!-- COMMANDS -->
 	
 	<category>
 		<pattern># XOR #</pattern>
@@ -216,7 +216,7 @@
 		<pattern>PANIC</pattern>
 		<template>
 			<random>
-				<li>:petebutton: PANIC MODE ENGAGED, THIS IS NOT A DRILL :petebutton:</li>
+				<li>:petebutton: PANIC MODE ENGAGED, THIS ISN'T A DRILL :petebutton:</li>
 				<li>:petebutton: PANIC :petebutton:</li>
 				<li>:petebutton: SOUND THE ALARM :petebutton:</li>
 				<li>:petebutton: RED ALERT, RED ALERT :petebutton:</li>
